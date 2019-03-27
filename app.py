@@ -1,10 +1,12 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello():
-    return "App Hello"
+    return "Hello App from pyliv"
+    # return send_from_directory('main', 'JsonParse')
 
 
 if __name__ == '__main__':
