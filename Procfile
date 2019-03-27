@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath app main.JsonParse
+web: gunicorn app:app
