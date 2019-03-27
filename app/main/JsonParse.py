@@ -25,7 +25,7 @@ def json_parse():
         <h2>File Path is {path}</h2>'''.format(file=file_name, format=file_format, path=file_path)
 
     else:
-        return '''<h1>Welcome to Pyliv POC</h1>'''
+        return '''<h1>This is JsonParse Get Method</h1>'''
 
 
 if __name__ == '__main__':
