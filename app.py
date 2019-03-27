@@ -6,9 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    template_dir = os.path.join(os.path.dirname(os.path.abspath(os.path.dirname(__file__))), 'templates')
-    app.template_folder = template_dir
-    return render_template('index.html')
+    return "Welcome to Pyliv POC"
+    #template_dir = os.path.join(os.path.dirname(os.path.abspath(os.path.dirname(__file__))), 'templates')
+    #app.template_folder = template_dir
+    #return render_template('index.html')
 
 
 @app.route('/json-parse', methods=['POST', 'GET'])
