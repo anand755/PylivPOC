@@ -17,13 +17,15 @@ def json_parse():
         file_format = req_data['format']
         file_path = req_data['path']
 
+        #livy logic
+
         return '''<h1>Value received to launch spark</h1>
         <h2>File Name is {file}</h2>
         <h2>File Format is {format}</h2>
         <h2>File Path is {path}</h2>'''.format(file=file_name, format=file_format, path=file_path)
 
     else:
-        return '''<h1>This is JsonParse Get Method</h1>'''
+        return '''<h1>Here it is JsonParse Get Method</h1>'''
 
 
 if __name__ == '__main__':
